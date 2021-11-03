@@ -1,0 +1,29 @@
+#canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.grid{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(255, 173, 214);
+    color: rgb(48, 175, 143);
+    font-weight: bold;
+}
+
+button{
+    max-width: 75%;
+    color: hotpink;
+    font-size: large;
+    background-color: rgb(255, 203, 248);
+    border-radius: 5px;
+}

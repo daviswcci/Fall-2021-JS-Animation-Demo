@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+<div class="container">
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <h1>WCCI JS Animation Demo</h1> 
+    <div class="grid">
+        <p id="donutText">Donut Count: 0.00</p>
+        <button id="donutButton" onclick="bake()">Bake Donuts</button>
+        <div>
+            <p id="multiplierText">Current Multiplier: 1.00x</p>
+            <p id="multiplierCost">Multiplier Cost: 25.00</p>   
+        </div>
+        <button id="multiplierButton" onclick="buyMult()">Buy Multiplier</button>
+        <div>
+            <p id="clickerCount">Autoclickers: 0.00</p>
+            <p id="clickerCost">Autoclicker Cost: 100.00</p>
+        </div>
+        <button id="clickerButton" onclick="buyClick()">Buy Clicker</button>
+    </div>
+</div>
+</body>
+<script src = "donutMaker.js"></script>
+<script src = "particles.js"></script>
+<script src = "app.js"></script>
+</html>
