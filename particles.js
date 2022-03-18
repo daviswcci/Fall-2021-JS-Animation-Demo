@@ -7,6 +7,9 @@ let imgs = ["donut.png", "brownDonut.png"];
 
 const donutImage = new Image();
 
+let then = Date.now();
+let now = Date.now();
+let delta = (now - then) / 1000;
 
 let particleArray = [];
 const maxSize = 200;
@@ -57,6 +60,9 @@ function init(){
 
 // animate 
 function animate(){
+    now = Date.now();
+    delta = (now - then) / 1000;
+    document.getElementById("framerate").innerText = (1 / delta).toFixed(0) + "fps";
     requestAnimationFrame(animate);
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -68,6 +74,8 @@ function animate(){
     particleArray = particleArray.filter(function(particle){
         return particle.opacity >= 0.05 && particle.size >= .1;
     })
+
+    then = Date.now();
 }
 
 //document.addEventListener('mousedown', spawnSpinningDonut);
